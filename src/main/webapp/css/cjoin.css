@@ -1,0 +1,64 @@
+body {
+    background-color: #e5f0f1;
+}
+.f_join {
+    text-align: center;
+    margin: 50px auto;
+}
+.join_ck_wrpe {
+    width: 100%;
+    text-align: center;
+    border-top:1px solid #000 ;
+}
+.join_ck1 ,.join_ck2{
+    width: 250px;
+    height: 450px;
+    display: inline-block;
+    margin:  auto;
+    border-left: 1px solid rgb(122, 122, 122);
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+.join_ck1:nth-child(1) {
+    border: none;
+}
+.join_ck1 h3 {
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.join_ck2 h3 {
+    margin-top: 80px;
+    font-size: 20px;
+    margin-bottom: 55px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.join_ck1 p {
+    margin-top: 30px;
+    font-weight: lighter;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.join_ck1 img ,.join_ck2 img  {
+    width: 200px;
+    height: 200px;
+}
+.join_ck1 a, .join_ck2 a {
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #4bccd3;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #4bccd3;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.join_ck1 a:hover ,.join_ck2 a:hover {
+    background-color: #4bccd3;
+    color: #fff;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>회원가입</title>
+    <script type="text/javascript">
+	function fn_sendMember() {
+		let frm_Join=document.frmJoin;//폼에서 받은 데이터를 객체frm_Join에 담아줌
+		let id=frm_Join.id.value; //frm_Join객체에 id값을 받아
+		let pw=frm_Join.pw.value; //frm_Join객체에 pw값을 받아
+		let email=frm_Join.email.value; //frm_Join객체에 email값을 받아
+		let name=frm_Join.name.value; //frm_Join객체에 name값을 받아
+		let phone=frm_Join.phone.value; //frm_Join객체에 phone값을 받아
+		//유효성 체크 => 필수값입력
+		if(id.length==0 || id=="") {
+			alert("아이디는 필수입니다.");
+		}else if(pw.length==0 || pw=="") {
+			alert("비밀번호는 필수입니다.");
+		}else if(email.length==0 || email=="") {
+			alert("이메일은 필수입니다.");
+		}else if(name.length==0 || name=="") {
+			alert("이름은 필수입니다.");
+		}else {
+			frm_Join.method="post"; //위에 모든 조건이 충족되었다면 post로 보내죠
+			frm_Join.action="join"; // join 서블릿으로 
+			frm_Join.submit(); //frmJoin객체를 보내줌
+			
+		}
+	}
+</script>
+</head>
+<body>
+    <nav class="main_nav">
+        <a href="#"><span>마이페이지</span></a>
+        <a href="#"><span>로그인</span></a>
+        <a href="cjoin.html"><span>회원가입</span></a>
+    </nav>
+    <!--헤더영역-->
+    <header>
+        <div class="menu_wrap">
+            <div class="logo">
+                <a href="index.html"><img src="images/mainlogo1.png" alt="서울대공원"></a>
+            </div>
+        </div>
+    </header>
+    <div class="join_back">
+        
+    </div>
+    <div class="join">
+        <h2>회원가입</h2>
+        <p class="jointext">필수항목</p>
+        <div class="join_wrap1">
+            <form action="login.jsp" method="post" id="myForm">
+                <p>
+                    <label for="id">아이디</label>
+                    <input class="_wrap" type="text" placeholder="영어/숫자,4~16자" id="id" name="id" required>
+                </p>
+                <p>
+                    <label for="pass">비밀번호</label>
+                    <input class="_wrap" type="password" placeholder="영어/숫자/특수문자2개조합,8~15자" id="pass" name="pass" required>
+                </p>
+                <p>
+                    <label for="passCheck">비밀번호확인</label>
+                    <input class="_wrap" type="password" placeholder="비밀번호 재입력" id="passCheck" name="passCheck" required>
+                </p>
+                <p>
+                    <label for="name">이름</label>
+                    <input class="_wrap" type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="phone">핸드폰번호</label>
+                    <input class="_wrap" type="text" placeholder="010포함" id="phone" name="phone" required>
+                </p>
+                <p>
+                    <label for="email">이메일</label>
+                    <input class="_wrap" type="email" placeholder="아이디/비밀번호 찾기에 사용될 메일주소 등록입니다." id="email" name="email" required>
+                </p>
+            </form>
+        </div>     
+        <div class="wrap" >
+        	<input type="button" value="가입하기" onclick="fn_sendMember()"/>
+			<input type="hidden" name="command" value="addMember"/><!--사용자에게는 보이지 않는 숨겨진 입력 필드  -->
+        </div>
+    </div>
+</body>
+</html>

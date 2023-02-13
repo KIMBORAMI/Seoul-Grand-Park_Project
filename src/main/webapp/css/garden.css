@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;;
+}
+#allmain #main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2200px;
+    z-index: -1;
+}
+.garden_page2 {
+    display: none;
+}
+.garden_con1 > .garden_con1H {
+    color: #fff;
+    text-shadow:1.5px 1.5px 1.5px #2F868A;
+    font-size: 2.5em;
+    text-align: center;
+}
+.garden_con1 > .garden_con1P {
+    color: #fff;
+    text-shadow:1.5px 1.5px 1.5px #2F868A;
+    font-size: 1.5em;
+    text-align: center;
+}
+.garden_con2 {
+    width: 100%;
+    height: 450px;
+    background-color: rgba(229, 243, 248, 0.874);;
+}
+.garden_con2 img {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+}
+.garden_con2T {
+    float: right;
+    width: 50%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.garden_con2H {
+    margin-top: 50px;
+    line-height: 30px;
+    font-size: 1.3em;
+}
+.garden_con2P {
+    margin-top: 20px;
+    line-height: 30px;
+}
+button {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgb(6, 0, 93);
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+.garden_con3 {
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+}
+.garden_con3 img {
+    width: 400px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.garden_con3T {
+    padding-top: 30px;
+    margin-left: 30px;
+    width: 35%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.gardenNum {
+    font-size: 2.3em;
+}
+.garden_con4 {
+    width: 100%;
+    height: 420px;
+    margin: 40px 0;
+}
+.garden_con4 img {
+    width: 470px;
+    height: 352px;
+    float: left;
+    margin-left: 20px;
+}
+.garden_con4T {
+    margin-left: 540px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.garden_con4T-1{
+    display: inline-block;
+    margin-left: 230px;
+}
+.garden_con4-1 {
+    width: 500px;
+    margin-bottom: 20px;
+}
+.garden_con4-border1 {
+    border: 1px solid black;
+    display: inline-block;
+    width: 230px;
+}
+.garden_con4-border2 {
+    border: 1px solid black;
+    display: inline-block;
+}
+.garden_con4-border3 {
+    border: 1px solid black;
+    display: inline-block;
+}
+.garden_con4-text {
+    display: inline-block;
+}
+
+

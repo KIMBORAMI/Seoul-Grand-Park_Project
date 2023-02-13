@@ -1,0 +1,37 @@
+@charset "urf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+/*헤더 영역*/
+li, a {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.main_nav a {
+    text-decoration: none;
+    color: rgb(7, 0, 103);
+    font-weight: bold;
+}
+.main_nav {
+    width:300px;
+    font-size: 0.85em;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.main_nav a::after {
+    content: ' :';
+}
+.main_nav a:last-child::after {
+    content: '  ';
+}
+.menu_wrap .logo {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 120px;
+    height: 50px;
+}
+.menu_wrap {
+    height: 80px;
+}
+

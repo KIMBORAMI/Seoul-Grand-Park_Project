@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animal.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>서울대공원</title>
+    <script>
+        let smartPhones=[
+            'iphone','ipad','opera mini','opera mobi','nokia','android','webos','windows ce','blackberry','iemobile','sonyericsson'
+        ];
+        //스마트폰 구분
+        for(let i in smartPhones) {
+            if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
+                document.location='http://boram437.dothome.co.kr/mindex.html'
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="main_nav">
+        <a href="#"><span>마이페이지</span></a>
+        <a href="login.html"><span>로그인</span></a>
+        <a href="cjoin.html"><span>회원가입</span></a>
+    </nav>
+    <!--헤더영역-->
+    <header>
+        <hr>
+        <div class="menu_wrap">
+            <div class="logo">
+                <a href="index.html"><img src="images/mainlogo1.png" alt="서울대공원"></a>
+            </div>
+            <ul class="dep1">
+                <!--공원 가이드 메뉴 시작-->
+                <li>
+                    <a href="#" >공원가이드</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--공원 가이드 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                              
+                            </div>
+                            <li>
+                                <a href="#">이용정보</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">이용요금 및 시간</a></li>
+                                    <li><a href="#">입장권 구매</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                    <li><a href="#">주차장 이용안내</a></li>
+                                    <li><a href="#">공원 내 이동수단</a></li>
+                                    <li><a href="#">편의시설</a></li>
+                                    <li><a href="#">공원이용안내</a></li>
+                                    <li><a href="#">실시간 환경정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">관람정보</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">시설알아보기</a></li>
+                                    <li><a href="#">추천관람코스</a></li>
+                                    <li><a href="#">관람안내도</a></li>
+                                    <li><a href="#">관람에티켓</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">고객소리함</a></li>
+                                    <li><a href="#">자주하는 질문</a></li>
+                                    <li><a href="#">분실물센터</a></li>
+                                    <li><a href="#">홈페이지 바로잡기</a></li>
+                                    <li><a href="#">공원 안전공지</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--공원 가이드 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--공원 가이드 메뉴 종료-->
+
+            <!--동물원 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="animal.html" >동물원</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--동물원 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                                
+                            </div>
+                            <li>
+                                <a href="animal.html">동물원 소개</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">서울동물원 소개</a></li>
+                                    <li><a href="#">동물원 역사</a></li>
+                                    <li><a href="#">AZA 인증</a></li>
+                                    <li><a href="#">동물교실</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">동물원 둘러보기</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">동물사 소개</a></li>
+                                    <li><a href="#">동물원 인기코스</a></li>
+                                    <li><a href="#">동물 보유현황</a></li>
+                                    <li><a href="#">동물 생태설명회</a></li>
+                                    <li><a href="#">이달의 동물</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">동물 이야기</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">동물보전이야기</a></li>
+                                    <li><a href="#">동물복지이야기</a></li>
+                                    <li><a href="#">동물진료방역</a></li>
+                                    <li><a href="#">멸종위기동물</a></li>
+                                    <li><a href="#">사육사노트</a></li>
+                                </ul>
+                            </li> 
+                            <li>
+                                <a href="#">어린이동물원</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">어린이 동물원 소개</a></li>
+                                    <li><a href="#">동물사 소개</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--동물원 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--동물원 메뉴 종료-->
+
+            <!--식물원 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="#" >식물원</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--식물원 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                                
+                            </div>
+                            <li>
+                                <a href="#">식물원 소개</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">서울대공원 식물원 소개</a></li>
+                                    <li><a href="#">테마가든 소개</a></li>
+                                    <li><a href="#">식물원 발자취</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">식물원 둘러보기</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">전시온실</a></li>
+                                    <li><a href="#">식물 주제원</a></li>
+                                    <li><a href="#">식물표본전시관</a></li>
+                                    <li><a href="#">식물 보유현황</a></li>
+                                    <li><a href="#">이달의 식물</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">테마가든 둘러보기</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">장미원</a></li>
+                                    <li><a href="#">주제정원</a></li>
+                                    <li><a href="#">테마가든 나들이</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--식물원 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--식물원 메뉴 종료-->
+
+            <!--산림휴양 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="#" >산림휴양</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--산림휴양 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                                
+                            </div>
+                            <li>
+                                <a href="#">치유의 숲</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">치유의 숲 소개</a></li>
+                                    <li><a href="#">산림치유 프로그램</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">산림욕장</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">산림욕장 소개</a></li>
+                                    <li><a href="#">코스별 안내</a></li>
+                                    <li><a href="#">대공원 둘레길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">캠핑장</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">캠핑장 소개</a></li>
+                                    <li><a href="#">시설안내</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--산림휴양 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--산림휴양 메뉴 종료-->
+
+            <!--신청ㆍ참여 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="#" >신청ㆍ참여</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--신청ㆍ참여 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                                
+                            </div>
+                            <li>
+                                <a href="#">교육ㆍ행사</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">교육 프로그램</a></li>
+                                    <li><a href="#">온라인교육</a></li>
+                                    <li><a href="#">교육 자료실</a></li>
+                                    <li><a href="#">문화행사</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">간편 신청·예약</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">동물프로그램</a></li>
+                                    <li><a href="#">식물프로그램</a></li>
+                                    <li><a href="#">산림치유프로그램</a></li>
+                                    <li><a href="#">광장 예약</a></li>
+                                    <li><a href="#">야구장 예약</a></li>
+                                    <li><a href="#">캠핑장 예약</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">참여하기</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">설문조사</a></li>
+                                    <li><a href="#">자원봉사</a></li>
+                                    <li><a href="#">동행기금</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--신청ㆍ참여 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--신청ㆍ참여 메뉴 종료-->
+
+            <!--대공원다多이슈 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="#" >대공원다多이슈</a>
+                    <div class="dep1-2">
+                        <ul class="dep2">
+                            <!--대공원다多이슈 드롭메뉴 시작-->
+                            <div class="dep1-3">
+                                
+                            </div>
+                            <li>
+                                <a href="#">온라인 대공원</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">서울대공원 TV</a></li>
+                                    <li><a href="#">대공원 앨범</a></li>
+                                    <li><a href="#">대공원 스토리</a></li>
+                                    <li><a href="#">모바일앱</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">대공원 VR 체험</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">동물원 VR</a></li>
+                                    <li><a href="#">식물원 VR</a></li>
+                                    <li><a href="#">테마가든 VR</a></li>
+                                    <li><a href="#">돌고래이야기관 VR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">오늘의 대공원</a>
+                                <button>→</button>
+                                <ul class="dep2-1">
+                                    <li><a href="#">새소식</a></li>
+                                    <li><a href="#">채용ㆍ입찰/a></li>
+                                    <li><a href="#">언론보도</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                    <!--대공원다多이슈 드롭메뉴 종료--> 
+                </li>
+            </ul>
+            <!--대공원다多이슈 메뉴 종료-->
+
+            <!--아카이브 메뉴 시작-->
+            <ul class="dep1">
+                <li>
+                    <a href="#" >아카이브</a>
+                </li>
+            </ul>
+            <!--아카이브 메뉴 종료-->
+            <hr id="line">
+    </header>
+    <!--헤더 종료-->   
+    <!--메인 이미지 영역-->
+    <div id="allmain">
+        <img id="main-image" src="images/mainmainmain.png" alt="서울대공원">
+        <img id="image-bird" src="images/bird.png" alt="서울대공원">
+        <img id="image-bird2" src="images/bird2.png" alt="서울대공원" >
+        <img id="image-bear" src="images/bear.png" alt="서울대공원">
+        <img id="image-fox" src="images/fox.png" alt="서울대공원">
+        <img id="image-deer" src="images/deer.png" alt="서울대공원">
+        <img id="image-rabbit" src="images/rabbit.png" alt="서울대공원">
+        <img id="image-ball" src="images/ball.png" alt="서울대공원">
+        <h3>Together with Nature</h3>
+        <p>서울대공원</p>
+    </div>
+    <!--슬라이더_메인 컨텐츠 영역 시작-->
+    <div id="maincontent">
+        <section class="maincontentText">
+            <p><strong id="PROGRAMtext">PROGRAM 서울대공원</strong></p>
+            <p id="PROGRAM_text">신나고 유익한 프로그램을 안내드립니다.</p> 
+        </section>
+        <div class="animation_canvas">
+            <!--슬라이더 이미지 영역-->
+            <div class="slider_panel">
+                <a href="#"><img class="slider_image" src="images/content1.jpg" alt="서울대공원 프로그램"></a>
+                <a href="#"><img class="slider_image" src="images/content2.jpg" alt="서울대공원 프로그램"></a>
+                <a href="#"><img class="slider_image" src="images/content3.jpg" alt="서울대공원 프로그램"></a>
+                <a href="#"><img class="slider_image" src="images/content4.jpg" alt="서울대공원 프로그램"></a>
+            </div>
+            <!--좌우 컨트롤 버튼 패널-->
+            <div class="left_right_conrtrol_panel conrtrol_button">
+                <img class="left_control" src="images/arrow_pre.png" alt="left_control">
+                <img class="right_control" src="images/arrow_next.png" alt="right_control">
+            </div>
+        </div>
+    </div>
+    <!--메인 컨텐츠 영역 종료-->
+
+    <!--컨텐츠 영역1 시작-->
+    <div id="content1">
+        <section id="context1">
+            <h3>추천관람코스</h3>
+            <p>서울대공원을 어떻게 관람하면 좋을까요? 핵심코스를 통해 효율적이고 즐거운 관람하세요.</p>
+        </section>
+        <div id="conbox1">
+            <div class="con1btn">
+                <div class="conbtn">
+                    <p>동물원<br>인기관람코스<br></p>
+                    <p><button>보러가기</button><br></p>
+                </div>
+                <img class="conimg" src="images/road1.png" alt="동물원 인기관람코스">
+                <p class="text">동물원에서 가장 인기있는 동물사들로 관람해보세요~!<br>
+                    아이와 함께하는 가족들에게 안성맞춤입니다!</p>
+            </div>
+            <div class="con1btn">
+                <div class="conbtn">
+                    <p>식물원<br>집중탐구코스<br></p>
+                    <p><button>보러가기</button></p>
+                </div>
+                <img class="conimg" src="images/road2.png" alt="식물원 집중탐구코스">
+                <p class="text">공립수목원인 서울대공원 식물원을 관람해보세요!
+                    <br>식물과 꽃을 좋아하는 분들에게 강력추천~!</p>
+            </div>
+            <div class="con1btn">
+                <div class="conbtn">
+                    <p>영화촬영지와 함께<br>산책코스<br></p>
+                    <p><button>보러가기</button></p>
+                </div>
+                <img class="conimg" src="images/road3.png" alt="영화촬영지와 함께 산책코스">
+                <p class="text">영화촬영지도 보고, 오붓하게 즐길 수 있는 대공원 관람코스입니다.</p>
+            </div>
+            <div class="con1btn">
+                <div class="conbtn">
+                    <p>아이가 있다면<br>동물과 함께코스<br></p>
+                    <p><button>보러가기</button></p>
+                </div>
+                <img class="conimg" src="images/road6.png" alt="동물과 함께코스">
+                <p class="text">동물원에서 가장 인기있는 동물사들로 관람해보세요~!<br>
+                    아이와 함께하는 가족들에게 안성맞춤입니다!</p>
+            </div>
+        </div>
+    </div>
+    <!--컨텐츠 영역1 종료-->
+    <!--푸터 영역 시작-->
+    <footer id="footer">
+        <div id="footerwrpe">
+            <div id="center">
+                <div class="tit">고객센터</div>
+                <div class="con tel">
+                    <a href="tel:02-500-7335" title="고객센터">02-500-7335</a>
+                </div>
+            </div>
+            <div id="law">
+                <div class="tit">법률정보</div>
+                <div class="con">
+                    <ul>
+                        <li><a href="#" target="_blank" title="새창열림">개인정보처리방침</a></li>
+                        <li><a href="#" target="_blank" title="새창열림">윤리실천강령</a></li>
+                        <li class="last"><a href="#" target="_blank" title="새창열림">영상정보처리기기 운영·관리 방침</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="ic-wa">
+                <a href="#" title="웹접근성 품질인증서 pdf" target="_blank" class="web"><img src="images/ic-wa.png" alt="웹접근성인증마크"></a>
+            </div>
+        </div>
+        <div id="logo-seoul_gp">
+            <a class="flogo01"><img src="images/logo-seoul_gp.png" alt="I SEOUL U"></a>
+            <div class="info">
+                <address>경기도 과천시 대공원광장로 102(막계동) 서울대공원</address>
+                <span>COPYRIGHT(C) 2020 SEOUL GRANDPARK. ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </footer>
+    <!--푸터 영역 종료-->
+</body>
+</html>
